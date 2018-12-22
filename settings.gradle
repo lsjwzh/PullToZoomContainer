@@ -1,0 +1,2 @@
+include ':demo4Zoomable', ':widget.pulltozoom',
+        ':..:widget.powerfulscrollview'
