@@ -43,7 +43,7 @@
       android:textAppearance="@style/TextAppearance.AppCompat.Title"
       app:actionWhenOverScroll="translation"/>
 
-    <com.lsjwzh.widget.powerfulscrollview.AutoExtendRecyclerView
+    <com.lsjwzh.widget.powerfulscrollview.AutoMeasureRecyclerView
       android:id="@+id/recyclerview"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
