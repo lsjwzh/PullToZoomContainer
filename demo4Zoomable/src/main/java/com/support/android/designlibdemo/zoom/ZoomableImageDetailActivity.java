@@ -18,9 +18,9 @@ package com.support.android.designlibdemo.zoom;
 
 import android.os.Bundle;
 import com.lsjwzh.widget.PullToZoomContainer;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.LinearLayoutManager;
+import androidx.appcompat.widget.RecyclerView;
 import android.view.Menu;
 import android.widget.ImageView;
 
