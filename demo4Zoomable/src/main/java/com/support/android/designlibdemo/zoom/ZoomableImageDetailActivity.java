@@ -18,9 +18,10 @@ package com.support.android.designlibdemo.zoom;
 
 import android.os.Bundle;
 import com.lsjwzh.widget.PullToZoomContainer;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.Menu;
 import android.widget.ImageView;
 
@@ -35,14 +36,14 @@ public class ZoomableImageDetailActivity extends AppCompatActivity {
 
     final PullToZoomContainer refreshContainer
         = (PullToZoomContainer) findViewById(R.id.main_content);
-    RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerview);
+    RecyclerView rv = findViewById(R.id.recyclerview);
     refreshContainer.takeOverScrollBehavior(rv);
     setupRecyclerView(rv);
     loadBackdrop();
   }
 
   private void loadBackdrop() {
-    final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
+    final ImageView imageView = findViewById(R.id.backdrop);
     Glide.with(this).load(Cheeses.getRandomCheeseDrawable()).centerCrop().into(imageView);
   }
 
